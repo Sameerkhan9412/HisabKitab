@@ -5,6 +5,7 @@ import Link from "next/link";
 import { Menu, Plus, Bell, Search } from "lucide-react";
 import { useSession } from "next-auth/react";
 import { QuickAddModal } from "./QuickAddModal";
+import { BrandLogo } from "@/components/ui/BrandLogo";
 
 interface TopbarProps {
   onToggleSidebar: () => void;
@@ -37,6 +38,10 @@ export function Topbar({ onToggleSidebar }: TopbarProps) {
           >
             <Menu className="w-5 h-5" />
           </button>
+
+          <div className="lg:hidden flex items-center">
+            <BrandLogo size="sm" showText={false} />
+          </div>
 
           <div className="hidden sm:block">
             <h2 className="text-sm font-bold text-white">

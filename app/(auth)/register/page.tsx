@@ -6,6 +6,7 @@ import { useRouter } from "next/navigation";
 import { signIn } from "next-auth/react";
 import { Eye, EyeOff, Lock, Mail, User as UserIcon, ArrowRight, Globe, ShieldCheck } from "lucide-react";
 import { useToast } from "@/components/ui/Toast";
+import { BrandLogo } from "@/components/ui/BrandLogo";
 
 export default function RegisterPage() {
   const router = useRouter();
@@ -88,11 +89,9 @@ export default function RegisterPage() {
       <div className="absolute bottom-1/3 right-1/4 translate-x-1/2 translate-y-1/2 w-96 h-96 bg-indigo-500/10 rounded-full blur-3xl pointer-events-none" />
 
       <div className="w-full max-w-lg z-10 my-8">
-        <div className="text-center mb-6">
-          <h1 className="text-3xl font-extrabold tracking-tight text-white">
-            Create Your <span className="text-emerald-400">FinPulse</span> Account
-          </h1>
-          <p className="text-xs text-slate-400 mt-1">
+        <div className="text-center mb-6 flex flex-col items-center">
+          <BrandLogo size="lg" className="mb-2" />
+          <p className="text-xs text-slate-400 mt-2">
             Track individual wealth, budgets, and split shared group expenses effortlessly.
           </p>
         </div>

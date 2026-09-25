@@ -1,4 +1,4 @@
-# FinPulse — Personal & Shared Expense Management Web Application
+# HisabKitab — Personal & Shared Expense Management Web Application
 
 > Production-ready, secure, and responsive full-stack financial intelligence application built with Next.js 14 App Router, TypeScript, Tailwind CSS, MongoDB, Mongoose, NextAuth.js, and Recharts.
 
@@ -6,7 +6,7 @@
 
 ## 🌟 Executive Overview
 
-**FinPulse** is a dual-context wealth management platform engineered to solve both personal financial tracking and shared group expense reconciliation (roommates, vacation trips, dining, and team expenses) within a single unified workspace.
+**HisabKitab** is a dual-context wealth management platform engineered to solve both personal financial tracking and shared group expense reconciliation (roommates, vacation trips, dining, and team expenses) within a single unified workspace.
 
 It enforces strict authoritative financial accounting on the server side:
 * **Integer Minor-Unit Arithmetic**: All monetary quantities are stored and manipulated as integer minor units (paise/cents, e.g. ₹1,250.50 = `125050`) to eliminate IEEE 754 binary floating-point drift.

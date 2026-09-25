@@ -4,11 +4,11 @@ import { AuthProvider } from "@/components/providers/AuthProvider";
 import { ToastProvider } from "@/components/ui/Toast";
 
 export const metadata: Metadata = {
-  title: "FinPulse - Personal & Shared Expense Management",
+  title: "HisabKitab - Personal & Shared Expense Management",
   description:
     "Production-ready financial intelligence platform for personal cash flows, budgets, shared room expenses, split bills, and simplified settlements.",
-  keywords: ["expense tracker", "splitwise alternative", "budgeting", "shared expenses", "finance app", "settlement"],
-  authors: [{ name: "FinPulse Team" }],
+  keywords: ["hisab kitab", "expense tracker", "splitwise alternative", "budgeting", "shared expenses", "finance app", "settlement"],
+  authors: [{ name: "HisabKitab Team" }],
 };
 
 export const viewport: Viewport = {

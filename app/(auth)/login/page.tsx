@@ -6,6 +6,7 @@ import { useRouter } from "next/navigation";
 import { signIn } from "next-auth/react";
 import { Eye, EyeOff, Lock, Mail, ArrowRight, Sparkles, ShieldCheck } from "lucide-react";
 import { useToast } from "@/components/ui/Toast";
+import { BrandLogo } from "@/components/ui/BrandLogo";
 
 export default function LoginPage() {
   const router = useRouter();
@@ -59,15 +60,10 @@ export default function LoginPage() {
 
       <div className="w-full max-w-md z-10">
         {/* App Logo & Header */}
-        <div className="text-center mb-8">
-          <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-gradient-to-tr from-emerald-500 to-teal-400 shadow-lg shadow-emerald-500/20 mb-4">
-            <Sparkles className="w-8 h-8 text-slate-950" />
-          </div>
-          <h1 className="text-3xl font-extrabold tracking-tight text-white">
-            Fin<span className="text-emerald-400">Pulse</span>
-          </h1>
-          <p className="text-sm text-slate-400 mt-1">
-            Personal & Shared Expense Intelligence
+        <div className="text-center mb-8 flex flex-col items-center">
+          <BrandLogo size="lg" className="mb-2" />
+          <p className="text-xs text-slate-400 mt-2">
+            Personal & Shared Expense Ledger
           </p>
         </div>
 
